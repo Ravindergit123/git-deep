@@ -18,3 +18,7 @@ variable "location" {
   type        = string
   default     = "East US"
 }
+
+output "resource_group_name" {
+  value = azurerm_resource_group.tcs_rg.name
+}
